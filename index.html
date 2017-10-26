@@ -1,1 +1,122 @@
-<!-- Agrega aquí la estructura HTML de tu sitio web -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Freelancer</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="fonts/css/font-awesome.min.css"> <!-- link para iconos -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet"> <!-- link de tipografia monserrat -->
+  </head>
+  <body>
+    <header> <!-- Encabezado de la página, que será fijo.-->
+      <nav class="encabezado">
+        <div class="title">
+          <h1>START BOOTSTRAP</h1>
+        </div>
+        <div class="option">
+          <ul id="lista1"><!--Una lista para las opciones del menú en forma horizontal-->
+            <li class="uno">PORTFOLIO</li>
+            <li class="dos">ABOUT</li>
+            <li class="tres">CONTACT</li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="inicio"> <!--Home page, se encuentra la imagen principal y el título-->
+      <img class="profile" src="assets/images/profile.png" alt="imagen">
+      <div class="">
+        <h1 class="title2">START BOOTSTRAP</h1>
+        <div class="separador"> <!--div para realizar la linea divisora y la estrella-->
+          <i class="fa fa-star fa-2x"></i>
+        </div>
+        <h2 class="details">Web Developer - Graphic Artist - User Experience Designer</h2> <!--texto inferior de la home page-->
+      </div>
+    </div>
+    <div class="menu"> <!--Segunda parte de la página, donde se encuentra portfolio y las imágenes-->
+      <h1 class="title3">PORTFOLIO</h1>
+      <div class="separador2"> <!--div al igual que antes, para realizar linea divisora y la estrella,
+         pero esta vez para llamarla en css le otorge id y no class, para no llamar a la misma estrella-->
+        <i id=star class="fa fa-star fa-2x"></i>
+      </div>
+      <div class="imagen"> <!--Imagenes de portfolio-->
+        <img class="cabin" src="assets/images/portfolio/cabin.png" alt="imagen">
+        <img class="cake" src="assets/images/portfolio/cake.png" alt="imagen">
+        <img class="circus" src="assets/images/portfolio/circus.png" alt="imagen">
+        <img class="game" src="assets/images/portfolio/game.png" alt="imagen">
+        <img class="safe" src="assets/images/portfolio/safe.png" alt="imagen">
+        <img class="submarine" src="assets/images/portfolio/submarine.png" alt="imagen">
+      </div>
+    </div>
+    <div class="about"> <!--tercera parte de la página, donde se encuentra ABOUT-->
+      <br> <!-- una solucion momentanea a que titulo about no baja-->
+      <h1 class="title4">ABOUT</h1>
+      <div class="separador3">
+        <i class="fa fa-star fa-2x"></i>
+      </div>
+      <div class="text"> <!--dos párrafos de ABOUT--->
+        <p class="text1">Freelancer is a free bootstrap theme created by Start
+          Bootstrap. The download includes the complete source files
+           including HTML, CSS, and JavaScript as well as optional
+           LESS stylesheets for easy customization.</p>
+        <p class="text2">Whether you're a student looking to showcase your work,
+          a professional looking to attract clients, or a graphic
+          artist looking to share your projects, this template is
+          the perfect starting point!</p>
+      </div>
+      <div class="download"> <!--boton download theme-->
+        <i class="fa fa-download fa-2x" aria-hidden="true"></i>
+        <p class="text3">Download Theme</p>
+      </div>
+    </div>
+    <div class="contact"> <!--Cuarta parte de página, CONTACT-->
+      <h1 class="title5">CONTACT ME</h1>
+      <div class="separador4"> <!--estrella y separador-->
+        <i id=star class="fa fa-star fa-2x"></i>
+      </div>
+      <div class="contactme"> <!--Formulario para llenar datos de usuario-->
+        <form>
+          <div class="name"> <!--Nombre-->
+            <label for="fname">Name</label>
+          </div>
+          <input type="text" class="fname" name="fname">
+          <div class="email"><!--Email-->
+            <label for="fname">Email Address</label>
+          </div>
+          <input type="text" class="fname" name="lname">
+          <div class="phone"><!--Teléfono-->
+            <label for="fname">Phone Number</label>
+          </div>
+          <input type="text" class="fname" name="lname">
+          <div class="message"> <!--Mensaje-->
+            <label for="fname">Message</label>
+          </div>
+          <input type="text" class="message1" name="lname">
+        </form>
+        <div class="boton"> <!--boton Enviar datos-->
+          <p class="send">Send</p>
+        </div>
+      </div>
+    </div>
+    <footer class="pie-pagina"> <!--Parte final de página-->
+      <div class="location"> <!--caja contenedora de LOCATION-->
+        <h2 class="title-location">LOCATION</h2>
+        <p class="texto-loc">3481 Melrose Place</p>
+        <p class="texto2-loc">Beverly Hills, CA 90210</p>
+      </div>
+      <div class="around-web"> <!--caja contenedora de AROUND THE WEB-->
+        <h2>AROUND THE WEB</h2>
+        <div class="lista-iconos">
+          <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+          <i id="icon" class="fa fa-google-plus fa-2x" aria-hidden="true"></i>
+          <i id="icon" class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+          <i id="icon" class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
+          <i id="icon" class="fa fa-dribbble fa-2x" aria-hidden="true"></i>
+        </div>
+      </div>
+      <div class="about-web">
+        <h2 class="about-freelancer">ABOUT FREELANCER</h2>
+        <p class="text8">Freelance is a free to use, open source Bootstrap theme created by Start Bootstrap.</p>
+      </div>
+    </footer>
+  </body>
+</html>
